@@ -37,4 +37,8 @@ python main.py
 
 ## Author
 
+<<<<<<< HEAD
 Abdul Rehman
+=======
+Abdul Rehman
+>>>>>>> 170fbd582403e4de00abff750f9e346fc48d4566
