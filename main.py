@@ -126,30 +126,21 @@ if __name__ == '__main__':
                 say(f"Opening {site[0]} sir...")
                 webbrowser.open(site[1])
         # todo: Add a feature to play a specific song
-        if "open music" in query:
-            musicPath = "/Users/harry/Downloads/downfall-21371.mp3"
-            os.system(f"open {musicPath}")
+        if "play music" in query.lower():
+            musicPath = r"C:\Users\wajiz.pk\Downloads\music.mp3"
+            os.startfile(musicPath)
 
         elif "the time" in query:
-            musicPath = "/Users/harry/Downloads/downfall-21371.mp3"
+            musicPath = "/Users/wajiz.pk/Downloads/downfall-21371.mp3"
             hour = datetime.datetime.now().strftime("%H")
             min = datetime.datetime.now().strftime("%M")
-            say(f"Sir time is {hour} bajke {min} minutes")
-
-        elif "open facetime".lower() in query.lower():
-            os.system(f"open /System/Applications/FaceTime.app")
+            say(f"Sir time is {hour}  {min} minutes")
 
         elif "open pass".lower() in query.lower():
             os.system(f"open /Applications/Passky.app")
 
-        elif "Using artificial intelligence".lower() in query.lower():
-            ai(prompt=query)
-
         elif "Jarvis Quit".lower() in query.lower():
             exit()
-
-        elif "reset chat".lower() in query.lower():
-            chatStr = ""
 
         else:
             print("Chatting...")
